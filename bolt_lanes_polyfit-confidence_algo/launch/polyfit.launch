@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<launch>
+
+    <node name="DBSCAN" pkg="polyfit" type="DBSCAN.py" output="screen" />
+    <node name="topview" pkg="polyfit" type="topview" output="screen" />
+    <node name="rviz" pkg="rviz" type="rviz"  args="-d $(find polyfit)/rviz/default.rviz" output="screen"/>
+</launch>
